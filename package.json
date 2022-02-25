@@ -7,10 +7,10 @@
     "build": "vue-tsc --noEmit && vite build",
     "preview": "vite preview",
     "lint": "eslint --ext .ts,.vue --ignore-path .gitignore --fix src",
-    "format": "prettier src --write",
+    "format": "prettier . --write",
     "test": "jest",
-    "watch": "jest watch",
-    "coverage": "jest run --coverage"
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage"
   },
   "dependencies": {
     "pinia": "^2.0.11",

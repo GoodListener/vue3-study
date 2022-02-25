@@ -1,11 +1,16 @@
 <template>
-  <div>
-    <button class="">testButton</button>
-  </div>
+  <helloWorld msg="good" />
 </template>
 
-<script>
-export default {}
+<script lang="ts">
+import HelloWorld from './components/HelloWorld.vue'
+
+export default {
+  components: { HelloWorld },
+  setup() {
+    return {}
+  },
+}
 </script>
 
 <style scoped></style>
